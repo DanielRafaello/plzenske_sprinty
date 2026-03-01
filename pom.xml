@@ -14,9 +14,10 @@
   <packaging>pom</packaging>
   <name>plzenske_sprinty</name>
     <modules>
-        <module>plzen-sprinty-core</module>
-        <module>plzen-sprinty-repository</module>
-        <module>plzen-sprinty-view</module>
+        <module>ps-core</module>
+        <module>ps-repository</module>
+        <module>ps-view</module>
+        <module>ps-infrastructure</module>
     </modules>
 
     <dependencies>

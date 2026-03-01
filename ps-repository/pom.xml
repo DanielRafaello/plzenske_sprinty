@@ -7,10 +7,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>plzen-sprinty-repository</artifactId>
+    <artifactId>ps-repository</artifactId>
     <packaging>jar</packaging>
 
-    <name>plzen-sprinty-repository</name>
+    <name>ps-repository</name>
 
 
     <properties>
@@ -26,8 +26,8 @@
         </dependency>
         <dependency>
             <groupId>cz.helgroup.bazen</groupId>
-            <artifactId>plzen-sprinty-repository</artifactId>
-            <version>${project.parent.version}</version>
+            <artifactId>ps-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.mariadb.jdbc</groupId>

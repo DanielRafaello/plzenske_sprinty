@@ -7,9 +7,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>plzen-sprinty-core</artifactId>
+    <artifactId>ps-core</artifactId>
 
-    <name>plzen-sprinty-core</name>
+    <name>ps-core</name>
     <url>http://maven.apache.org</url>
 
     <properties>

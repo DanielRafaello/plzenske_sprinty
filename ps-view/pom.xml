@@ -7,9 +7,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>plzen-sprinty-view</artifactId>
+    <artifactId>ps-view</artifactId>
 
-    <name>plzen-sprinty-view</name>
+    <name>ps-view</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,8 +18,8 @@
     <dependencies>
         <dependency>
             <groupId>cz.helgroup.bazen</groupId>
-            <artifactId>plzen-sprinty-core</artifactId>
-            <version>${project.parent.version}</version>
+            <artifactId>ps-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>

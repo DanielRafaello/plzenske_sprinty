@@ -1,0 +1,7 @@
+jelikoz budeme hodne pracovat se soubory, zde bude modul pro praci se soubory, pro jejich nahravani, stahovani, mazani atd. + adresari
+- FileService - pro praci se soubory, nahravani, stahovani, mazani atd.
+- DirectoryService - pro praci s adresari, vytvareni, mazani, prejmenovavani atd.
+- interface bude opet v core modulu, zde bude implementace, ktera bude pouzivat FileSystem pro praci se soubory a adresari
+
+
+dale tu muze bzt naimplementovana PasswordHasher ... ale hashovani si opet muze resit samo - jen potrebuje nekde mit tridu pro hashovani hesel, ktera bude pouzivat nejakou knihovnu pro hashovani, napr. bcrypt nebo argon2, a bude poskytovat metody pro hashovani a ověřování hesel. Tato třída může být také umístěna v core modulu, aby byla dostupná pro všechny moduly, které potřebují hashovat hesla.
