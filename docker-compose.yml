@@ -1,0 +1,54 @@
+services:
+  # MariaDB databáze
+  db:
+    image: mariadb:10.11
+    container_name: plzenske-sprinty-db
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: heslo
+      MARIADB_DATABASE: plzenske-sprinty
+    ports:
+      - "3311:3306"
+    volumes:
+      # Připojení init skriptu
+      - ./docker/init:/docker-entrypoint-initdb.d
+      # Persistentní data
+      - db-data:/var/lib/mysql
+    networks:
+      - app-network
+
+  # phpMyAdmin pro správu databáze
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.2.1
+    container_name: plzenske-sprinty-phpma
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+#  # Mailpit - email testing
+#  mailpit:
+#    image: axllent/mailpit
+#    container_name: plzenske-sprinty-mailpit
+#    restart: unless-stopped
+#    ports:
+#      - "8025:8025"  # Web UI
+#      - "1025:1025"  # SMTP server
+#    networks:
+#      - app-network
+
+# Volumes pro persistentní data
+volumes:
+  db-data:
+    driver: local
+
+# Společná síť pro všechny služby
+networks:
+  app-network:
+    driver: bridge

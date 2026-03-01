@@ -1,0 +1,8 @@
+unit testy pise ten kdo pise kod
+integracni testy pise kdokoliv z nas dodatecne
+
+
+unit testy konci na <jmeno>Test
+integracni testy konci na <jmeno>IT
+
+zjistil v jake fazi zivotniho cyklu maven projektu se spousti unit testy a v jake integracni testy

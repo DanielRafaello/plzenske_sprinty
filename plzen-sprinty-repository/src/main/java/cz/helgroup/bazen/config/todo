@@ -1,0 +1,6 @@
+nastaveni databaze
+umoznit configurace pres @enableTransactionManagement
+rict kde jsou entity a repository @entityScan, @enableJpaRepositories
+
+
+pripadne DatabaseInitializer tridu pro nahrani defaultnich startovacich dat - treba jen pro testovani/dev lokalne

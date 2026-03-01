@@ -1,0 +1,1 @@
+-- todo pridani admina do tabulky pri spusteni aplikace pokud neexistuje
